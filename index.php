@@ -1,3 +1,9 @@
+<?php
+declare(strict_types=1);
+require(__DIR__.'/assets/languages.php');
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,28 +17,39 @@
   <body>
     <main>
 
-      <header> <!-- main header -->
-        <img class="logo" src="#" alt="#">
-        <img class="lang" src="#" alt="#">
-      </header>
+      <section style="background-color: pink; width: 100%; height: 100vh;"> <!-- section 1 -->
+        <header> <!-- main header -->
+          <img class="logo" src="#" alt="#">
+          <img class="lang" src="#" alt="#">
+          <a href="?lang=eng"> engelska </a>
+          <a href="?lang=swe"> svenska </a>
+        </header>
+        <article>
 
-      <section> <!-- section 1 -->
+          <h1> <?= $languages[$lang]['titleS1']; ?> </h1>
+          <p> <?= $languages[$lang]['textS1']; ?> </p>
+
+        </article>
+      </section>
+
+      <section style="background-color: hotpink; width: 100%; height: 100vh;"> <!-- section 2 -->
         <article>
 
 
         </article>
       </section>
 
-      <section> <!-- section 2 -->
+      <section style="background-color: gray; width: 100%; height: 100vh;"> <!-- section 3 -->
         <article>
 
+          <form>
+             <!-- <label for=“name”>Name</label> -->
+             <input id="name" type="text" placeholder="Name" />
 
-        </article>
-      </section>
-
-      <section> <!-- section 3 -->
-        <article>
-
+             <!-- <label for=“mail”>Email</label> -->
+             <input id="mail" type="email" placeholder="Email" />
+             <button type="submit">Send to email</button>
+           </form>
 
         </article>
       </section>
@@ -46,13 +63,3 @@
     </main>
   </body>
 </html>
-
-
-<form>
-   <!-- <label for=“name”>Name</label> -->
-   <input id="name" type="text" placeholder="Name" />
-
-   <!-- <label for=“mail”>Email</label> -->
-   <input id="mail" type="email" placeholder="Email" />
-   <button type="submit">Send to email</button>
- </form>
