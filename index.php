@@ -26,7 +26,7 @@ require(__DIR__.'/assets/languages.php');
             <a href="?lang=swe"> svenska </a>
           </div>
         </header>
-        <article class="title-section-1">
+        <article class="title-section-1-2">
           <h1> <?= $languages[$lang]['titleS1']; ?> </h1>
         </article>
       </section>
@@ -36,33 +36,39 @@ require(__DIR__.'/assets/languages.php');
 
         </div>
         <article class="text-container">
-          <div class="text-section-2">
+          <div class="text-section-1-2 text-container-2">
             <h2 class="text-padding text-color"> <?= $languages[$lang]['titleF']; ?> </h2>
             <p class="text-padding text-color"> <?= $languages[$lang]['titleS2']; ?> </p>
             <p class="text-color"> <?= $languages[$lang]['textS2']; ?> </p>
           </div>
-          <form>
-             <!-- <label for=“name”>Name</label> -->
-             <!-- <input id="name" type="text" placeholder="Name" /> -->
-             <!-- <label for=“mail”>Email</label> -->
-             <input id="mail" type="email" placeholder="Email" />
-             <button type="submit">Send to email</button>
-           </form>
         </article>
+        <div>
+          <form class="form">
+           <!-- <label for=“mail”>Email</label> -->
+           <input id="mail" type="email" placeholder="Email" />
+           <button type="submit">Send to email</button>
+          </form>
+        </div>
       </section>
 
-      <section class="section-3" style="background-color: gray; width: 100%; height: 100vh;"> <!-- section 3 -->
-        <article>
-
+      <section class="section-3"> <!-- section 3 -->
+        <article class="title-section-1-2">
+          <h1> <?= $languages[$lang]['titleF2']; ?> </h1>
 
 
         </article>
       </section>
 
       <section class="section-4"> <!-- section 4 -->
-        <article>
-
-
+        <div class="picture-container">
+          <div class="picture"> </div>
+          <div class="picture"> </div>
+          <div class="picture"> </div>
+        </div>
+        <article class="features-container">
+          <div class="text-features"> </div>
+          <div class="text-features"> </div>
+          <div class="text-features"> </div>
         </article>
       </section>
 
