@@ -24,7 +24,7 @@ $languages = [
     'feature2' => 'Exterior',
     'feature2' => 'Interior',
     'titleS2' => 'History',
-    'textS2' => 'Saab started life in 1937 in Trollhättan, Sweden, as an aeroplane manufacturer to provide aircraft for the Swedish Air Force, just as Europe was steeling itself for another war. The company\'s full name was Svenska Aeroplan Aktiebolaget, giving the world the acronym Saab. The head office soon moved to the Swedish university town of Linköping, where this massive company has its largest operation today. It was there in 1945, amid various dreams of diversification, that a project to develop motor cars got underway. Today we are starting a new chapter. Fast Security, FS. Is the future car.',
+    'textS2' => 'Saab started life in 1937 in Trollhättan, Sweden, as an aeroplane manufacturer to provide aircraft for the Swedish Air Force, just as Europe was steeling itself for another war. The company\'s full name was Svenska Aeroplan Aktiebolaget, giving the world the acronym Saab. The head office soon moved to the Swedish university town of Linköping, where this massive company has its largest operation today.',
     'textFooter' => 'footer'
   ],
 ];
@@ -34,3 +34,5 @@ $languages = [
   } else {
     $lang = 'eng';
   };
+
+// Saab started life in 1937 in Trollhättan, Sweden, as an aeroplane manufacturer to provide aircraft for the Swedish Air Force, just as Europe was steeling itself for another war. The company\'s full name was Svenska Aeroplan Aktiebolaget, giving the world the acronym Saab. The head office soon moved to the Swedish university town of Linköping, where this massive company has its largest operation today. It was there in 1945, amid various dreams of diversification, that a project to develop motor cars got underway. Today we are starting a new chapter. Fast Security, FS. Is the future car.'

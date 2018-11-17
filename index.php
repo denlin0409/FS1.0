@@ -17,7 +17,7 @@ require(__DIR__.'/assets/languages.php');
   <body>
     <main>
 
-      <section class="section-1"> <!-- section 1 -->
+      <section> <!-- section 1 -->
         <header> <!-- main header -->
           <div class="header-bg">
             <img class="logo" src="#" alt="#">
@@ -26,17 +26,17 @@ require(__DIR__.'/assets/languages.php');
             <a href="?lang=swe"> svenska </a>
           </div>
         </header>
-        <article class="title-section-1-2">
+        <article class="title">
           <h1> <?= $languages[$lang]['titleS1']; ?> </h1>
         </article>
       </section>
 
-      <section class="section-2"> <!-- section 2 -->
+      <section class="s-padding"> <!-- section 2 -->
         <div class="box-1">
 
         </div>
-        <article class="text-container">
-          <div class="text-section-1-2 text-container-2">
+        <article class="container">
+          <div class="text-container">
             <h2 class="text-padding text-color"> <?= $languages[$lang]['titleF']; ?> </h2>
             <p class="text-padding text-color"> <?= $languages[$lang]['titleS2']; ?> </p>
             <p class="text-color"> <?= $languages[$lang]['textS2']; ?> </p>
@@ -51,28 +51,37 @@ require(__DIR__.'/assets/languages.php');
         </div>
       </section>
 
-      <section class="section-3"> <!-- section 3 -->
-        <article class="title-section-1-2">
+      <section> <!-- section 3 -->
+        <article class="title">
           <h1> <?= $languages[$lang]['titleF2']; ?> </h1>
 
 
         </article>
       </section>
 
-      <section class="section-4"> <!-- section 4 -->
+      <section class="s-padding"> <!-- section 4 -->
         <div class="picture-container">
-          <div class="picture"> </div>
+          <div class="picture big-picture"> </div>
           <div class="picture"> </div>
           <div class="picture"> </div>
         </div>
         <article class="features-container">
-          <div class="text-features"> </div>
-          <div class="text-features"> </div>
-          <div class="text-features"> </div>
+          <div class="text-features">
+            <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
+            <p> <?= $languages[$lang]['textS2']; ?> </p>
+          </div>
+          <div class="text-features">
+            <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
+            <p> <?= $languages[$lang]['textS2']; ?> </p>
+          </div>
+          <div class="text-features">
+            <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
+            <p> <?= $languages[$lang]['textS2']; ?> </p>
+          </div>
         </article>
       </section>
 
-      <section class="section-5"> <!-- section 5 -->
+      <section> <!-- section 5 -->
         <article>
 
 
