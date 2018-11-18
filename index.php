@@ -26,14 +26,16 @@ require(__DIR__.'/assets/languages.php');
             <a href="?lang=swe"> svenska </a>
           </div>
         </header>
-        <article class="title">
-          <h1> <?= $languages[$lang]['titleS1']; ?> </h1>
-        </article>
+        <div class="first-page-img">
+          <article class="title">
+            <h1> <?= $languages[$lang]['titleS1']; ?> </h1>
+          </article>
+        </div>
       </section>
 
       <section class="s-padding"> <!-- section 2 -->
         <div class="box-1">
-
+          <img src="assets/images/placeholder.jpg" alt="#" width="100%" height="100%">
         </div>
         <article class="container">
           <div class="text-container">
@@ -52,18 +54,26 @@ require(__DIR__.'/assets/languages.php');
       </section>
 
       <section> <!-- section 3 -->
-        <article class="title">
-          <h1> <?= $languages[$lang]['titleF2']; ?> </h1>
+        <div class="first-page-img">
+          <article class="title">
+            <h1> <?= $languages[$lang]['titleF2']; ?> </h1>
 
 
-        </article>
+          </article>
+        </div>
       </section>
 
       <section class="s-padding"> <!-- section 4 -->
         <div class="picture-container">
-          <div class="picture big-picture"> </div>
-          <div class="picture"> </div>
-          <div class="picture"> </div>
+          <div class="picture big-picture">
+            <img src="assets/images/placeholder.jpg" alt="#" width="100%" height="100%">
+          </div>
+          <div class="picture">
+            <img src="assets/images/placeholder.jpg" alt="#" width="100%" height="100%">
+          </div>
+          <div class="picture">
+            <img src="assets/images/placeholder.jpg" alt="#" width="100%" height="100%">
+          </div>
         </div>
         <article class="features-container">
           <div class="text-features">
@@ -84,12 +94,13 @@ require(__DIR__.'/assets/languages.php');
       <section> <!-- section 5 -->
         <article>
 
+          <h1 style="height: 1070px;"> TEMPORARY TEXT </h1> <!-- REMOVE LATER -->
 
         </article>
       </section>
 
       <footer> <!-- main footer -->
-
+        <h1 style="height: 500px;"> TEMPORARY TEXT </h1> <!-- REMOVE LATER -->
       </footer>
 
       <script type="text/javascript" src="assets/script.js"> </script>
