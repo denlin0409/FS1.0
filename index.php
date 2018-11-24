@@ -42,13 +42,15 @@ require(__DIR__.'/assets/languages.php');
           <article class="title">
             <h1> <?= $languages[$lang]['titleS1']; ?> </h1>
           </article>
+          <img class="hidden-pic-1" src="assets/images/group 2.jpg" alt="#" width="100%" height="100%">
+          <img class="hidden-pic-2" src="assets/images/preview2.jpg" alt="#" width="100%" height="100%">
         </div>
       </section>
 
       <section id="S02" class="section-component"> <!-- section 2 -->
         <div class="wrapper">
           <div class="box-1">
-            <img src="assets/images/placeholder.jpg" alt="#" width="100%" height="100%">
+            <img src="assets/images/Group 4.jpg" alt="#" width="100%" height="100%">
           </div>
           <article class="container">
             <div class="text-container">
@@ -58,22 +60,22 @@ require(__DIR__.'/assets/languages.php');
             </div>
           </article>
           <div>
-            <form class="form">
+            <!-- <form class="form"> -->
              <!-- <label for=“mail”>Email</label> -->
-             <input id="mail" type="email" placeholder="Email" />
-             <button type="submit">Send to email</button>
-            </form>
+             <!-- <input id="mail" type="email" placeholder="Email" /> -->
+             <!-- <button type="submit">Send to email</button> -->
+            <!-- </form> -->
           </div>
         </div>
       </section>
 
       <section id="S03" class="section-component"> <!-- section 3 -->
-        <div class="first-page-img">
+        <div class="second-page-img">
           <article class="title">
             <h1> <?= $languages[$lang]['titleF2']; ?> </h1>
-
-
           </article>
+          <img class="hidden-pic-1" src="assets/images/group 2.jpg" alt="#" width="100%" height="100%">
+          <img class="hidden-pic-2" src="assets/images/preview2.jpg" alt="#" width="100%" height="100%">
         </div>
       </section>
 
@@ -81,13 +83,13 @@ require(__DIR__.'/assets/languages.php');
         <div class="wrapper">
           <div class="picture-container">
             <div class="picture big-picture">
-              <img src="assets/images/placeholder.jpg" alt="#" width="100%" height="100%">
+              <img src="assets/images/rectangle copy 2.jpg" alt="#" width="100%" height="100%">
             </div>
             <div class="picture">
-              <img src="assets/images/placeholder.jpg" alt="#" width="100%" height="100%">
+              <img src="assets/images/rectangle copy 3.jpg" alt="#" width="100%" height="100%">
             </div>
             <div class="picture">
-              <img src="assets/images/placeholder.jpg" alt="#" width="100%" height="100%">
+              <img src="assets/images/rectangle copy 4.jpg" alt="#" width="100%" height="100%">
             </div>
           </div>
           <article class="features-container">

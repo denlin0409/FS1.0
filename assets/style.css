@@ -1,12 +1,21 @@
+@font-face {
+   font-family: AktivGrotesk-Regular;
+   src: url('AktivGrotesk-Regular.otf');
+   src: url('AktivGrotesk-Bold.otf');
+   src: url('AktivGrotesk-Light.otf');
+   src: url('AktivGrotesk-Medium.otf');
+
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Archivo Black', sans-serif;
-  /* scroll-behavior: smooth; */
+  font-family: 'AktivGrotesk-Regular', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 /* scroll-menu */
@@ -67,10 +76,11 @@ section {
 
 .first-page-img {
   width: 100%;
-  height: 1070px;
-  background-image: url('../../assets/images/placeholder.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 1070px;
+  height: auto;
+}
+
+.hidden-pic-1 {
+  display: none;
 }
 
 section:nth-child(even) {
@@ -100,9 +110,15 @@ section:nth-child(even) {
 
 .title {
   width: 1020px;
-  margin: auto;
   font-size: 45px;
-  padding-top: 200px;
+  padding-top: 150px;
+  margin-left: 12%;
+  position: absolute;
+}
+
+.second-page-img {
+  width: 100%;
+  height: auto;
 }
 
 .wrapper {
@@ -155,7 +171,7 @@ h2 {
 
 .picture {
   width: 320px;
-  height: 600px;
+  height: auto;
 }
 
 .features-container {
@@ -181,37 +197,37 @@ footer {
 .left-panel {
   height: 600px;
   position: relative;
-  background-image: url('../../assets/images/banner_4.jpg');
+  background-image: url('../../assets/images/preview2.jpg');
   background-repeat: no-repeat;
   background-position: left;
-  background-size: cover;
+  background-size: contain;
 }
 
 .right_panel {
-    position: absolute;
-    width: 50%;
-    padding-left: 4px;
-    height: 100%;
-    right: 0;
-    background-color: black;
-    background-image: url('../../assets/images/banner_4.jpg');
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    background-position: right;
-    align-items: center;
-    display: flex;
+  position: absolute;
+  width: 50%;
+  padding-left: 4px;
+  height: 100%;
+  right: 0;
+  background-color: black;
+  background-image: url('../../assets/images/preview2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: right;
+  align-items: center;
+  display: flex;
 
 }
 
 .right_panel::after, .right_panel::before {
-    content: " ";
-    background-color: #ccc;
-    position: absolute;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    cursor: ew-resize;
-    z-index: 5;
+  content: " ";
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  cursor: ew-resize;
+  z-index: 5;
 }
 
 .right_panel::before{
@@ -241,16 +257,9 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1250px) {
   .dot-menu {
     visibility: hidden;
-  }
-}
-
-@media only screen and (max-width: 1250px) {
-  .first-page-img {
-    height: 900px;
-    background-size: 100% 900px;
   }
 
   .header-bg {
@@ -299,7 +308,6 @@ footer {
 
   .picture {
     width: 100%;
-    height: 250px; /* auto */
   }
 
   .big-picture {
@@ -319,11 +327,6 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-  .first-page-img {
-    height: 660px;
-    background-size: 100% 660px;
-  }
-
   .title {
     width: 93%;
     margin-left: 7%;
@@ -338,6 +341,14 @@ footer {
 
   .box-1 {
     width: 90%;
+  }
+
+  .hidden-pic-1 {
+    display: initial;
+  }
+
+  .hidden-pic-2 {
+    display: none;
   }
 
   .container {
@@ -357,7 +368,7 @@ footer {
   }
 
   .picture {
-    height: 160px; /* auto */
+    height: auto;
   }
 
   .features-container {
