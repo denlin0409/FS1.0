@@ -4,7 +4,6 @@
    src: url('AktivGrotesk-Bold.otf');
    src: url('AktivGrotesk-Light.otf');
    src: url('AktivGrotesk-Medium.otf');
-
 }
 
 * {
@@ -70,8 +69,9 @@ section {
 }
 
 .logo {
-  width: 40px;
-  height: 20px;
+  width: 110px;
+  height: 80px;
+  margin: auto;
 }
 
 .first-page-img {
@@ -96,7 +96,7 @@ section:nth-child(even) {
 }
 
 .header-bg {
-  width: 1020px;
+  width: 100%;
   height: 70px;
   position: fixed;
   left: 50%;
@@ -114,6 +114,7 @@ section:nth-child(even) {
   padding-top: 150px;
   margin-left: 12%;
   position: absolute;
+  color: #00215B;
 }
 
 .second-page-img {
@@ -130,6 +131,8 @@ section:nth-child(even) {
   width: 1080px;
   height: 600px;
   margin: auto;
+  background-color: #F7F7F7;
+  border-top: 2px solid #00215B;
 }
 
 .container {
@@ -141,25 +144,29 @@ section:nth-child(even) {
   height: auto;
 }
 
-.text-container {
-  width: 560px;
-}
-
-.text-padding {
-  padding-top: 45px;
-}
-
-.text-color {
-  color: gray;
-}
-
 h2 {
   font-size: 32px;
 }
 
-.form {
-  float: right;
+h3 {
+  color: #00215B;
 }
+
+.button {
+  text-align: center;
+  width: 82%;
+  height: 56px;
+  background-color: #00215B;
+  color: white;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* .form {
+  float: right;
+} */
 
 .picture-container {
   display: flex;
@@ -167,6 +174,8 @@ h2 {
   width: 1080px;
   height: 600px;
   margin: auto;
+  background-color: #F7F7F7;
+  border-top: 2px solid #00215B;
 }
 
 .picture {
@@ -180,6 +189,8 @@ h2 {
   width: 1020px;
   height: auto;
   margin: auto;
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #00215B;
 }
 
 .text-features {
@@ -282,18 +293,6 @@ footer {
     height: auto;
   }
 
-  .container {
-    width: 80%;
-  }
-
-  .text-container {
-    width: 80%;
-  }
-
-  .text-padding {
-    padding-top: 8%;
-  }
-
   h2 {
     font-size: 28px;
   }
@@ -330,13 +329,13 @@ footer {
   .title {
     width: 93%;
     margin-left: 7%;
-    font-size: 19px;
+    font-size: 21px;
     padding-top: 140px;
   }
 
   .wrapper {
-    padding-top: 35px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .box-1 {
@@ -349,10 +348,6 @@ footer {
 
   .hidden-pic-2 {
     display: none;
-  }
-
-  .container {
-    width: 86%;
   }
 
   .text-container {
@@ -372,10 +367,13 @@ footer {
   }
 
   .features-container {
-    width: 86%;
+    width: 90%;
+    padding-bottom: 10px;
   }
 
   .text-features {
-    padding-top: 0;
+    padding: 16px;
+    padding-top: 0px;
+
   }
 }

@@ -14,7 +14,6 @@ require(__DIR__.'/assets/languages.php');
 		<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="assets/style.css" rel="stylesheet">
-
    	<!-- <link rel="shortcut icon" type="image/png" href=" link here "> -->
   </head>
   <body>
@@ -31,7 +30,7 @@ require(__DIR__.'/assets/languages.php');
 
       <header class="main-header"> <!-- main header -->
         <div class="header-bg">
-          <img class="logo" src="assets/images/placeholder.jpg" alt="#">
+          <img class="logo" src="assets/images/group 54.jpg" alt="#">
           <a href="?lang=eng"> engelska </a>
           <a href="?lang=swe"> svenska </a>
         </div>
@@ -40,7 +39,7 @@ require(__DIR__.'/assets/languages.php');
       <section id="S01" class="section-component"> <!-- section 1 -->
         <div class="first-page-img">
           <article class="title">
-            <h1> <?= $languages[$lang]['titleS1']; ?> </h1>
+            <p> <?= $languages[$lang]['titleS1']; ?> </p>
           </article>
           <img class="hidden-pic-1" src="assets/images/group 2.jpg" alt="#" width="100%" height="100%">
           <img class="hidden-pic-2" src="assets/images/preview2.jpg" alt="#" width="100%" height="100%">
@@ -52,13 +51,23 @@ require(__DIR__.'/assets/languages.php');
           <div class="box-1">
             <img src="assets/images/Group 4.jpg" alt="#" width="100%" height="100%">
           </div>
-          <article class="container">
-            <div class="text-container">
-              <h2 class="text-padding text-color"> <?= $languages[$lang]['titleF']; ?> </h2>
-              <p class="text-padding text-color"> <?= $languages[$lang]['titleS2']; ?> </p>
-              <p class="text-color"> <?= $languages[$lang]['textS2']; ?> </p>
+            <div class="features-container">
+              <div class="text-features">
+                <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
+                <p> <?= $languages[$lang]['textS2']; ?> </p>
+              </div>
+              <div class="text-features">
+                <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
+                <p> <?= $languages[$lang]['textS2']; ?> </p>
+              </div>
+              <div class="text-features">
+                <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
+                <p> <?= $languages[$lang]['textS2']; ?> </p>
+              </div>
+              <div class="button"> Jag vill bli en del av FS1.0 </div>
             </div>
-          </article>
+          </div>
+
           <div>
             <!-- <form class="form"> -->
              <!-- <label for=“mail”>Email</label> -->
@@ -72,7 +81,7 @@ require(__DIR__.'/assets/languages.php');
       <section id="S03" class="section-component"> <!-- section 3 -->
         <div class="second-page-img">
           <article class="title">
-            <h1> <?= $languages[$lang]['titleF2']; ?> </h1>
+            <p> <?= $languages[$lang]['titleF2']; ?> </p>
           </article>
           <img class="hidden-pic-1" src="assets/images/group 2.jpg" alt="#" width="100%" height="100%">
           <img class="hidden-pic-2" src="assets/images/preview2.jpg" alt="#" width="100%" height="100%">

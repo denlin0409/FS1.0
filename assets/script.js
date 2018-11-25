@@ -30,17 +30,17 @@ allSections.forEach((section) => {
     observer.observe(section);
 });
 
-window.addEventListener('scroll',() => {
-    let offset = window.pageYOffset;
-
-    if(offset >= 0 && offset <= mainHeaderHeight - 20){
-      mainHeader.classList.remove('header-wh');
-    };
-
-    if (offset >= mainHeaderHeight){
-        mainHeader.classList.add("header-wh");
-    };
-});
+// window.addEventListener('scroll',() => {
+//     let offset = window.pageYOffset;
+//
+//     if(offset >= 0 && offset <= mainHeaderHeight - 20){
+//       mainHeader.classList.remove('header-wh');
+//     };
+//
+//     if (offset >= mainHeaderHeight){
+//         mainHeader.classList.add("header-wh");
+//     };
+// });
 
 
 
