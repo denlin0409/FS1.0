@@ -42,35 +42,37 @@ require(__DIR__.'/assets/languages.php');
 
       <section id="S02" class="section-component"> <!-- section 2 -->
         <div class="wrapper">
-          <p> Vision, Historia & Framtid </p>
+          <p class="intro-text"> Vision, Historia & Framtid </p>
           <div class="features-container">
             <div class="box-1">
               <img src="assets/images/Group 4.jpg" alt="#" width="100%" height="100%">
             </div>
               <div class="text-features">
+                <p> Vision </p>
                 <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
                 <p> <?= $languages[$lang]['textS2']; ?> </p>
               </div>
               <div class="text-features">
+                <p> Vision </p>
                 <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
                 <p> <?= $languages[$lang]['textS2']; ?> </p>
               </div>
               <div class="text-features">
+                <p> Vision </p>
                 <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
                 <p> <?= $languages[$lang]['textS2']; ?> </p>
               </div>
-              <div class="button"> Jag vill bli en del av FS1.0 </div>
-              <p> Ladda ner en digital version av FS1.0 LOOKBOOK </p>
+              <div class="flex">
+                <div class="button"> Jag vill bli en del av FS1.0 </div>
+                <p class="lookbook"> Ladda ner en digital version av FS1.0 Lookbook </p>
+              </div>
             </div>
           </div>
-
-          <div>
             <!-- <form class="form"> -->
              <!-- <label for=“mail”>Email</label> -->
              <!-- <input id="mail" type="email" placeholder="Email" /> -->
              <!-- <button type="submit">Send to email</button> -->
             <!-- </form> -->
-          </div>
         </div>
       </section>
 
@@ -86,6 +88,7 @@ require(__DIR__.'/assets/languages.php');
 
       <section id="S04" class="section-component"> <!-- section 4 -->
         <div class="wrapper">
+          <article class="features-container">
           <div class="picture-container">
             <div class="picture big-picture">
               <img src="assets/images/rectangle copy 2.jpg" alt="#" width="100%" height="100%">
@@ -97,16 +100,18 @@ require(__DIR__.'/assets/languages.php');
               <img src="assets/images/rectangle copy 4.jpg" alt="#" width="100%" height="100%">
             </div>
           </div>
-          <article class="features-container">
             <div class="text-features">
+              <p> Vision </p>
               <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
               <p> <?= $languages[$lang]['textS2']; ?> </p>
             </div>
             <div class="text-features">
+              <p> Vision </p>
               <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
               <p> <?= $languages[$lang]['textS2']; ?> </p>
             </div>
             <div class="text-features">
+              <p> Vision </p>
               <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
               <p> <?= $languages[$lang]['textS2']; ?> </p>
             </div>
