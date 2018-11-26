@@ -11,8 +11,6 @@ require(__DIR__.'/assets/languages.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Fast Security 1.0 </title>
-		<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="assets/style.css" rel="stylesheet">
    	<!-- <link rel="shortcut icon" type="image/png" href=" link here "> -->
   </head>
@@ -20,38 +18,35 @@ require(__DIR__.'/assets/languages.php');
     <main>
 
       <!-- Start dot-menu -->
-      <div class="dot-menu">
+      <!-- <div class="dot-menu">
         <span class="dot-btn" data-section="S01"><div class="dot-o"></div></i>Intro</span>
         <span class="dot-btn" data-section="S02"><div class="dot-o"></div></i>Info</span>
         <span class="dot-btn" data-section="S03"><div class="dot-o"></div></i>Contact</span>
         <span class="dot-btn" data-section="S04"><div class="dot-o"></div></i>More</span>
-      </div>
+      </div> -->
       <!-- End dot-menu -->
 
-      <header class="main-header"> <!-- main header -->
-        <div class="header-bg">
-          <img class="logo" src="assets/images/group 54.jpg" alt="#">
-          <a href="?lang=eng"> engelska </a>
-          <a href="?lang=swe"> svenska </a>
-        </div>
+      <header> <!-- main header -->
+          <img class="logo" src="assets/images/Fill 50.jpg" alt="#">
+            <p class="title"> <?= $languages[$lang]['titleS1']; ?> </p>
+          <!-- <a href="?lang=eng"> engelska </a>
+          <a href="?lang=swe"> svenska </a> -->
       </header>
 
       <section id="S01" class="section-component"> <!-- section 1 -->
         <div class="first-page-img">
-          <article class="title">
-            <p> <?= $languages[$lang]['titleS1']; ?> </p>
-          </article>
           <img class="hidden-pic-1" src="assets/images/group 2.jpg" alt="#" width="100%" height="100%">
-          <img class="hidden-pic-2" src="assets/images/preview2.jpg" alt="#" width="100%" height="100%">
+          <img class="hidden-pic-2" src="assets/images/Preview2.jpg" alt="#" width="100%" height="100%">
         </div>
       </section>
 
       <section id="S02" class="section-component"> <!-- section 2 -->
         <div class="wrapper">
-          <div class="box-1">
-            <img src="assets/images/Group 4.jpg" alt="#" width="100%" height="100%">
-          </div>
-            <div class="features-container">
+          <p> Vision, Historia & Framtid </p>
+          <div class="features-container">
+            <div class="box-1">
+              <img src="assets/images/Group 4.jpg" alt="#" width="100%" height="100%">
+            </div>
               <div class="text-features">
                 <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
                 <p> <?= $languages[$lang]['textS2']; ?> </p>
@@ -65,6 +60,7 @@ require(__DIR__.'/assets/languages.php');
                 <p> <?= $languages[$lang]['textS2']; ?> </p>
               </div>
               <div class="button"> Jag vill bli en del av FS1.0 </div>
+              <p> Ladda ner en digital version av FS1.0 LOOKBOOK </p>
             </div>
           </div>
 
@@ -80,9 +76,9 @@ require(__DIR__.'/assets/languages.php');
 
       <section id="S03" class="section-component"> <!-- section 3 -->
         <div class="second-page-img">
-          <article class="title">
-            <p> <?= $languages[$lang]['titleF2']; ?> </p>
-          </article>
+          <header>
+            <p class="title"> <?= $languages[$lang]['titleF2']; ?> </p>
+          </header>
           <img class="hidden-pic-1" src="assets/images/group 2.jpg" alt="#" width="100%" height="100%">
           <img class="hidden-pic-2" src="assets/images/preview2.jpg" alt="#" width="100%" height="100%">
         </div>

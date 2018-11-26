@@ -2,7 +2,7 @@
 const spanDotBtns = document.querySelectorAll('.dot-btn');
 const mainHeader = document.querySelector('.main-header');
 const allSections = document.querySelectorAll('.section-component');
-const mainHeaderHeight = mainHeader.getBoundingClientRect().height;
+// const mainHeaderHeight = mainHeader.getBoundingClientRect().height;
 
 const options = {
   threshold: 0.5
@@ -33,13 +33,13 @@ allSections.forEach((section) => {
 // window.addEventListener('scroll',() => {
 //     let offset = window.pageYOffset;
 //
-//     if(offset >= 0 && offset <= mainHeaderHeight - 20){
-//       mainHeader.classList.remove('header-wh');
-//     };
-//
-//     if (offset >= mainHeaderHeight){
-//         mainHeader.classList.add("header-wh");
-//     };
+//     // if(offset >= 0 && offset <= mainHeaderHeight - 20){
+//     //   mainHeader.classList.remove('header-wh');
+//     // };
+//     //
+//     // if (offset >= mainHeaderHeight){
+//     //     mainHeader.classList.add("header-wh");
+//     // };
 // });
 
 
