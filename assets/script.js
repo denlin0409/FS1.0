@@ -2,7 +2,8 @@
 const spanDotBtns = document.querySelectorAll('.dot-btn');
 const mainHeader = document.querySelector('.main-header');
 const allSections = document.querySelectorAll('.section-component');
-// const mainHeaderHeight = mainHeader.getBoundingClientRect().height;
+const activatorMenu = document.querySelector('.activator-menu');
+const sideMenu = document.querySelector('.side-menu');
 
 const options = {
   threshold: 0.5
@@ -15,20 +16,20 @@ for (let i = 0; i < spanDotBtns.length; i++) {
     });
 };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(function(entry){
-        let dataSet = entry.target.id;
-        let dotBtn = document.querySelector(`[data-section=${CSS.escape(dataSet)}]`);
-        if(entry.intersectionRatio > 0){
-            dotBtn.children['0'].classList.toggle("dot-f");
-        }
-    });
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(function(entry){
+//         let dataSet = entry.target.id;
+//         let dotBtn = document.querySelector(`[data-section=${CSS.escape(dataSet)}]`);
+//         if(entry.intersectionRatio > 0){
+//             dotBtn.children['0'].classList.toggle("dot-f");
+//         }
+//     });
+//
+// }, options);
 
-}, options);
-
-allSections.forEach((section) => {
-    observer.observe(section);
-});
+// allSections.forEach((section) => {
+//     observer.observe(section);
+// });
 
 // window.addEventListener('scroll',() => {
 //     let offset = window.pageYOffset;
@@ -63,4 +64,9 @@ panel.addEventListener("mousedown", function(e){
 
 document.addEventListener("mouseup", function(){
     document.removeEventListener("mousemove", resize);
+});
+
+activatorMenu.addEventListener('click', () => {
+  sideMenu.classList.toggle('side-menu-open');
+  console.log(sideMenu);
 });

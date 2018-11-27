@@ -27,6 +27,154 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Side-menu styling*/
+
+/* Start floated sidebar activator form + menu */
+
+.activator-menu{
+  width: 145px;
+  height: 29px;
+  background-color: #00215B;
+  position: fixed;
+  color: white;
+  top: 50%;
+  right: -58px;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.activator-menu::after, .activator-menu::before{
+  content: " ";
+  display: block;
+  background-color: #00215B;
+  position: absolute;
+  transform: rotate(-45deg);
+  height: 12px;
+  width: 12px;
+}
+
+.activator-menu::after{
+  top: -6px;
+}
+
+.activator-menu::before{
+  bottom: -6px;
+}
+
+.activator-menu span{
+  padding-right: 5px;
+}
+
+.side-menu-close{
+  transform: translateY(-50%) translateX(100%);
+}
+
+.side-menu-open{
+  transform: translateY(-50%) translateX(0);
+}
+
+.side-menu{
+  background-color: #FFF;
+  position: fixed;
+  height: 670px;
+  height: calc(100vh - 80px);
+  width: 319px;
+  z-index: 1000;
+  top: 50%;
+  display: flex;
+  right: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.languages{
+  width: 263px;
+  height: 30px;
+  background-color: #00215B;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+ul.menu-items{
+  background-color: #F7F7F7;
+  width: 263px;
+  height: 120px;
+  list-style: none;
+  padding: 8px;
+  line-height: 26px;
+  border-bottom: 2px solid #00215B;;
+}
+
+.info{
+  width: 263px;
+}
+
+.info h2{
+  color: #00215B;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.info p{
+  color: #979797;
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 8px;
+}
+
+.info hr{
+  margin: 0 50px;
+}
+
+.side-menu form{
+  display: flex;
+  flex-direction: column;
+  width: 263px;
+}
+
+.side-menu form input{
+  height: 45px;
+  margin-top: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding-left: 10px;
+  border-top: 2px solid #00215B;
+  border-bottom: 2px solid #00215B;
+}
+
+.flex-contact{
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+.side-menu form input[type=checkbox]{
+  margin: 0;
+}
+
+.checkbox-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 220px;
+}
+
+.side-menu form button{
+  height: 44px;
+  margin-bottom: 14px;
+  background-color: #00215B;
+  font-size: 14px;
+  color: white;
+}
+
 /* scroll-menu */
 /* .dot-menu{
   height: 150px;
@@ -106,6 +254,10 @@ header {
 }
 
 .hidden-pic-1 {
+  display: none;
+}
+
+.hidden-pic-3 {
   display: none;
 }
 
@@ -302,6 +454,14 @@ footer {
     width: 100%;
   } */
 
+  .hidden-pic-2 {
+    display: none;
+  }
+
+  .hidden-pic-3 {
+    display: initial;
+  }
+
   .logo {
     width: 98px;
     height: 70px;
@@ -419,6 +579,9 @@ footer {
     display: none;
   }
 
+  .hidden-pic-3 {
+    display: none;
+  }
 
 
   /* h2 {

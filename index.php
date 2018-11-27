@@ -37,8 +37,50 @@ require(__DIR__.'/assets/languages.php');
         <div class="first-page-img">
           <img class="hidden-pic-1" src="assets/images/group 2.jpg" alt="#" width="100%" height="100%">
           <img class="hidden-pic-2" src="assets/images/Preview2.jpg" alt="#" width="100%" height="100%">
+          <img class="hidden-pic-3" src="assets/images/preview-ms.jpg" alt="#" width="100%" height="100%">
+
         </div>
       </section>
+
+      <!-- Start floated sidebar activator -->
+      <div class="activator-menu"><span>Main.</span>Menu</div>
+
+      <div class="side-menu side-menu-close">
+        <div class="languages">
+          Svenska | Engelska
+        </div>
+
+        <ul class="menu-items">
+          <li>Meny</li>
+          <li>Vision, Historia & Framtid</li>
+          <li>Komfort, Elegans & Modernitet</li>
+          <li>Lookbook</li>
+        </ul>
+
+        <div class="info">
+          <h2>Be special. FS1.0</h2>
+          <p>Håll dig uppdaterad om FS1.0 och få veta så fort den finns tillgänglig för just dig.
+            Ta del av exklusiva erbjudanden och kampanjer, de första 1000 anmälningarna får en gratis lookbook.
+            <a href="#">Ladda ner pdf-version här.</a></p>
+            <hr>
+            <br>
+        </div>
+
+        <form class="form" action=" " method="post">
+          <input type="text" name="name" placeholder="Name Surname">
+          <input type="email" name="email" placeholder="E-mail">
+
+          <label class="checkbox-flex"><input type="checkbox" name="accept">Jag har läst och godkänner</label>
+
+          <button type="submit" name="button">Skicka</button>
+
+          <div class="flex-contact">
+            <span>hello@fastsecurity.com</span>
+            <span>+46 31 777 00 00</span>
+          </div>
+        </form>
+      </div>
+      <!-- End floated sidebar activator -->
 
       <section id="S02" class="section-component"> <!-- section 2 -->
         <div class="wrapper">
