@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 $languages = [
   'swe' => [
-    'titleS1' => ' <strong> Du är speciell. </strong>',
+    'titleS1' => 'Du är speciell.',
     'titleSLight' => ' FastSecurity, FS.1.0',
     'textS1' => 'Många tycker fortfarande att Saab gör bilar, och det är rätt. Vi är på väg för framtiden. Saab är mycket levande och väl, som ett av världens mest innovativa företag. Och nu är vi stolta över att presentera vår bil för framtiden: FastSecurity, FS.',
     'titleF' => 'FastSecurity',
@@ -17,7 +17,7 @@ $languages = [
     'textFooter' => 'footer'
   ],
   'eng' => [
-    'titleS1' => ' <strong> You are special. </strong>',
+    'titleS1' => 'You are special.',
     'titleSLight' => ' FastSecurity, FS.1.0',
     'textS1' => 'Many people still think Saab makes cars, and that is correct. We are on the go for the future. Saab is very much alive and well, as one of the world’s most innovative companies. And now we are proud to present our car for the future: FastSecurity, FS.',
     'titleF' => 'FastSecurity',

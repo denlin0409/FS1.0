@@ -53,7 +53,6 @@ p {
   top: 50%;
   transform: rotate(-90deg);
   right: -58px;
-  box-shadow: 0px -5px 30px gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +62,7 @@ p {
   animation-duration: 1s;
   transition: transform 1s;
   backface-visibility: hidden;
-
+  font-size: 18px;
 }
 
 .activator-menu__open{
@@ -118,7 +117,7 @@ p {
 .side-menu{
   background-color: #FFF;
   position: fixed;
-  height: auto;
+  height: 670px;
   width: 319px;
   z-index: 1;
   top: 50%;
@@ -128,9 +127,7 @@ p {
   align-items: center;
   transition: transform 1s;
   backface-visibility: hidden;
-  box-shadow: 1px 0px 100px gray;
-
-
+  box-shadow: 1px 0px 60px gray;
 }
 
 .languages{
@@ -142,37 +139,71 @@ p {
   justify-content: center;
   align-items: center;
   margin-top: 25px;
+  font-size: 18px;
+}
+
+.languages a {
+  text-decoration: none;
+  color: white;
+}
+
+.languages a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.languages p {
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 ul.menu-items{
   background-color: #F7F7F7;
   width: 263px;
-  height: 120px;
+  height: 142px;
   list-style: none;
-  padding: 8px;
-  line-height: 26px;
-  border-bottom: 2px solid #00215B;;
+  padding: 13px;
+  line-height: 30px;
+  border-bottom: 2px solid #00215B;
+  font-size: 18px;
+  color: #00215B;
 }
 
-.info{
+ul li {
+  font-family: "aktiv-grotesk-cd";
+}
+
+.smaller {
+  font-size: 15px;
+  color: #595959;
+}
+
+.info {
   width: 263px;
+  height: 170px;
+}
+
+.info a {
+  text-decoration: underline;
+  color: black;
+  font-family: "aktiv-grotesk-cd";
+}
+
+.info a:hover {
+  color: #00215B;
 }
 
 .info h2{
   color: #00215B;
-  padding: 10px 0;
-  text-align: center;
+  padding: 6px 0;
+  font-size: 30px;
 }
 
 .info p{
-  color: #979797;
+  color: #2E2E2E;
   font-size: 15px;
   line-height: 22px;
-  padding-bottom: 8px;
-}
-
-.info hr{
-  margin: 0 50px;
+  font-family: "aktiv-grotesk-cd";
 }
 
 .side-menu form{
@@ -182,14 +213,16 @@ ul.menu-items{
 }
 
 .side-menu form input{
-  height: 45px;
-  margin-top: 8px;
+  height: 51px;
+  margin-top: 16px;
   border: none;
   outline: none;
   font-size: 14px;
   padding-left: 10px;
   border-top: 2px solid #00215B;
   border-bottom: 2px solid #00215B;
+  background-color: #F7F7F7;
+  font-size: 16px;
 }
 
 .flex-contact{
@@ -206,16 +239,27 @@ ul.menu-items{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 220px;
+  margin: auto;
+  width: 186px;
+  color: black;
+  font-family: "aktiv-grotesk-cd";
+  font-size: 15px;
 }
 
-.side-menu form button{
-  height: 44px;
+button{
+  height: 48px;
   margin-bottom: 14px;
   background-color: #00215B;
-  font-size: 14px;
+  font-size: 18px !important;
   color: white;
+  border: none;
+}
+
+.flex-contact p{
+  font-size: 15px !important;
+  margin-top: 15px;
+  color: #00215B !important;
+  font-family: "aktiv-grotesk-cd";
 }
 
 /* section styling */
@@ -231,35 +275,34 @@ header {
 }
 
 .logo {
-  width: 140px;
-  height: 100px;
-  margin-top: 50px;
+  width: 20%;
+  height: auto;
+  margin-top: 6%;
   position: absolute;
   transform: translate(-50%, 0);
   left: 50%;
+  z-index: 1;
   animation-name: fade-in;
   animation-duration: 3s;
 }
 
-.title {
+.first-title {
   font-size: 40px !important;
-  margin-top: 190px;
   color: #00215B !important;
   text-align: center;
+  font-family: "aktiv-grotesk-cd-bold";
   animation-name: fade-in;
-  animation-duration: 6s;
+  animation-duration: 3s;
 }
 
 .first-page-img {
   width: 100%;
   height: auto;
+  animation-name: fade-in;
+  animation-duration: 3s;
 }
 
-.hidden-pic-1 {
-  display: none;
-}
-
-.hidden-pic-3 {
+.hidden-pic-2 {
   display: none;
 }
 
@@ -288,6 +331,25 @@ header {
   height: auto;
 }
 
+.quotes {
+  width: 100%;
+  height: 243px;
+  background-color: #00215B;
+  display: grid;
+  align-items: center;
+}
+
+.quotes-center {
+  width: 788px;
+  margin: auto;
+}
+
+.quotes p {
+  color: white !important;
+  margin-top: 20px;
+  margin-bottom: 20px !important;
+}
+
 .wrapper {
   margin-top: 120px;
   margin-bottom: 120px;
@@ -295,10 +357,10 @@ header {
 
 .intro-text {
   text-align: center;
-  margin-right: 596px;
+  margin-right: 564px;
   margin-bottom: 10px !important;
   font-family: "aktiv-grotesk-cd";
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .features-container {
@@ -329,12 +391,12 @@ header {
 p:first-child {
   padding-bottom: 6px;
   color: #00215B;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 p:last-child {
-  color: #2E2E2E;
-  font-size: 20px;
+  color: #595959;
+  font-size: 24px;
 }
 
 h3 {
@@ -362,7 +424,6 @@ h3 {
   padding: 12px;
   color: #00215B !important;
   font-size: 24px;
-  font-family: "aktiv-grotesk-cd";
 }
 
 .flex {
@@ -408,16 +469,6 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   margin-left: 5px !important;
 }
 
-footer {
-  width: 100%;
-  height: 300px;
-  background-color: #00215B;
-}
-
-footer h3 {
-  color: white !important;
-}
-
 /*split-view styling */
 .hide-overflow {
   overflow-x: hidden;
@@ -431,10 +482,10 @@ footer h3 {
 
 .right_panel {
   position: absolute;
-  width: 50%;
+  width: 17%;
   height: 100%;
   right: 0;
-  background-image: url('../../assets/images/preview2.jpg');
+  background-image: url('../../assets/images/fastsecurity_slider_back.png');
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position: right;
@@ -453,9 +504,10 @@ footer h3 {
   background-color: #00215B;
   position: absolute;
   left: 0;
-  width: 6px;
-  height: 100%;
+  width: 3px;
+  height: 87%;
   cursor: ew-resize;
+  bottom: 0;
 }
 
 .right_panel::before{
@@ -465,36 +517,79 @@ footer h3 {
 
 }
 
-.right_panel i {
-  right: calc(100% - 33px);
+.right_panel p {
+  right: calc(100% - 70px);
+  bottom: 14%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: ew-resize;
   background-color: #00215B;
   position: absolute;
-  width: 60px;
-  height: 40px;
+  width: 140px;
+  height: 48px;
   color: white;
   z-index: 1;
+  font-size: 18px;
+  padding-bottom: 0px;
+  user-select: none;
 }
 
-@media only screen and (max-width: 1600px) {
-  .logo {
-    width: 112px;
-    height: 80px;
-    margin-top: 30px;
-    position: absolute;
-    transform: translate(-50%, 0);
-    left: 50%;
-  }
+footer {
+  background-color: #777777;
+  height: 243px;
+}
 
-  .title {
-    font-size: 34px;
-    margin-top: 140px;
-    color: #00215B;
-    text-align: center;
-  }
+.footer-holder {
+  width: 960px;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-align-left {
+  text-align: left;
+}
+
+.footer-holder p {
+  font-size: 24px;
+  color: white;
+  padding-bottom: 0px;
+}
+
+.footer-align-right {
+  text-align: right;
+}
+
+footer img {
+  width: 24px;
+  margin: 0 6px;
+}
+
+.languages-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.languages-footer a {
+  color: white;
+  font-size: 24px;
+}
+
+.languages-footer a:hover {
+  color: white;
+  font-size: 24px;
+}
+
+.icons {
+  width: 960px;
+  margin: auto;
+  text-align: right;
+  height: 20%;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -505,25 +600,6 @@ footer h3 {
   /* .header-bg {
     width: 100%;
   } */
-
-  .hidden-pic-2 {
-    display: none;
-  }
-
-  .hidden-pic-3 {
-    display: initial;
-  }
-
-  .logo {
-    width: 98px;
-    height: 70px;
-    margin-top: 35px;
-  }
-
-  .title {
-    font-size: 38px !important;
-    margin-top: 130px;
-  }
 
   .wrapper {
     margin: 70px 74px;
@@ -578,24 +654,25 @@ footer h3 {
     border: 16px solid #00215B !important;
   }
 
-  .right_panel::after, .right_panel::before {
-    width: 4px;
-  }
-
   .right_panel i {
     right: calc(100% - 32px);
+  }
+
+  .quotes-center {
+    margin-right: 99px;
+    margin-left: 99px;
+    width: auto;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .logo {
-    width: 84px;
-    height: 60px;
+    width: 58%;
   }
 
-  .title {
-    font-size: 21px !important;
-    margin-top: 155%;
+  .first-title {
+    font-size: 24px !important;
+    margin-bottom: 70px !important;
   }
 
   .wrapper {
@@ -624,15 +701,11 @@ footer h3 {
   }
 
   .hidden-pic-1 {
-    display: initial;
+    display: none;
   }
 
   .hidden-pic-2 {
-    display: none;
-  }
-
-  .hidden-pic-3 {
-    display: none;
+    display: initial;
   }
 
   span.carousel-control-prev-icon, span.carousel-control-next-icon {
@@ -652,11 +725,38 @@ footer h3 {
     margin-left: 2px !important;
   }
 
+  .right_panel {
+    width: 25%;
+    background-image: url('../../assets/images/fastsecurity_mobile_slider_back.png');
+  }
+
+  .right_panel p {
+    right: calc(100% - 65px);
+    bottom: 10%;
+    width: 130px;
+    height: 40px;
+  }
+
   .right_panel::after, .right_panel::before {
     width: 2px;
+    height: 95%;
   }
 
   .right_panel i {
     right: calc(100% - 31px);
+  }
+
+  .quotes {
+    height: auto;
+
+  }
+
+  .quotes-center {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .quotes-center p {
+    font-size: 18px;
   }
 }

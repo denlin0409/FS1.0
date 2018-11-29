@@ -45,7 +45,7 @@ for (let i = 0; i < spanDotBtns.length; i++) {
 
 
 
-const BORDER_SIZE = 6;
+const BORDER_SIZE = 30;
 const panel = document.getElementById("right_panel");
 
 let m_pos;
