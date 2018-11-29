@@ -44,6 +44,18 @@ p {
   font-family: "aktiv-grotesk-cd-light";
 }
 
+.menu-link, .btn-lookbook, .btn-submit{
+  cursor: pointer;
+}
+
+.menu-link:hover{
+  text-decoration: underline;
+}
+
+.btn-lookbook:hover, .btn-submit:hover{
+  box-shadow: 0px 5px 5px gray;
+}
+
 .activator-menu{
   width: 145px;
   height: 29px;
@@ -77,6 +89,14 @@ p {
   transform: rotate(-45deg);
   height: 12px;
   width: 12px;
+}
+
+.menu-handle__arrow{
+  height: 12px;
+  width: 12px;
+  background-color: transparent;
+  position: absolute;
+  top: -6px;
 }
 
 .activator-menu::after{
@@ -306,26 +326,6 @@ header {
   display: none;
 }
 
-/* .main-header {
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-} */
-
-/* .header-bg {
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
-} */
-/*
-.header-wh {
-  background-color: white;
-  transition: 1s ease;
-} */
-
 .second-page-img {
   width: 100%;
   height: auto;
@@ -485,7 +485,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   width: 17%;
   height: 100%;
   right: 0;
-  background-image: url('../../assets/images/fastsecurity_slider_back.png');
+  background-image: url('../assets/images/fastsecurity_slider_back.png');
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position: right;
@@ -593,13 +593,6 @@ footer img {
 }
 
 @media only screen and (max-width: 1250px) {
-  /* .dot-menu {
-    visibility: hidden;
-  } */
-
-  /* .header-bg {
-    width: 100%;
-  } */
 
   .wrapper {
     margin: 70px 74px;
@@ -630,10 +623,6 @@ footer img {
   .text-features {
     margin: 25px;
   }
-
-  /* h2 {
-    font-size: 28px;
-  } */
 
   .button {
     margin: auto;
@@ -727,7 +716,7 @@ footer img {
 
   .right_panel {
     width: 25%;
-    background-image: url('../../assets/images/fastsecurity_mobile_slider_back.png');
+    background-image: url('../assets/images/fastsecurity_mobile_slider_back.png');
   }
 
   .right_panel p {
@@ -748,7 +737,6 @@ footer img {
 
   .quotes {
     height: auto;
-
   }
 
   .quotes-center {

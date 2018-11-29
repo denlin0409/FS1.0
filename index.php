@@ -1,9 +1,8 @@
 <?php
-declare(strict_types=1);
-require(__DIR__.'/assets/languages.php');
-
-
+  declare(strict_types=1);
+  require(__DIR__.'/assets/languages.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,13 +10,15 @@ require(__DIR__.'/assets/languages.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Fast Security 1.0 </title>
-    <link href="assets/style.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
     <main>
       <!-- Start floated sidebar activator -->
-      <div class="activator-menu"> <span class="bold-menu">Be Special. </span> <span class="light-menu"> Menu </span> </div>
+      <div class="activator-menu"> <span class="bold-menu">Be Special. </span> <span class="light-menu"> Menu </span> 
+        <div class="menu-handle__arrow"></div> 
+      </div>
         <div class="side-menu side-menu-close">
           <div class="languages">
             <a href="?lang=swe"> Svenska </a>
@@ -26,9 +27,19 @@ require(__DIR__.'/assets/languages.php');
           </div>
           <ul class="menu-items">
             <li class="smaller">Meny</li>
-            <li>Vision, Historia & Framtid</li>
-            <li>Komfort, Elegans & Modernitet</li>
-            <li>Lookbook</li>
+            <li>
+              <span class="menu-link" data-id="vision">Vision</span>,
+              <span class="menu-link" data-id="history">Historia</span> &
+              <span class="menu-link" data-id="future">Framtid</span>
+            <li>
+            
+            <li>
+              <span class="menu-link" data-id="comfort">Komfort</span>,
+              <span class="menu-link" data-id="elegance">Elegans</span> &
+              <span class="menu-link" data-id="modernity">Modernitet</span>
+            </li>
+            
+            <li><span class="menu-link" data-id="lookbook">Lookbook</span></li>
           </ul>
           <div class="info">
             <h2>Be special. FS1.0</h2>
@@ -41,7 +52,7 @@ require(__DIR__.'/assets/languages.php');
             <input type="text" name="name" placeholder="Name Surname">
             <input type="email" name="email" placeholder="E-mail">
             <label class="checkbox-flex"><input type="checkbox" name="accept">Jag har läst och godkänner</label>
-            <button type="button" name="button">Skicka</button>
+            <button class="btn-submit" type="button" name="button">Skicka</button>
             <div class="flex-contact">
               <p>hello@fastsecurity.com</p>
               <p>+46 31 777 00 00</p>
@@ -70,23 +81,23 @@ require(__DIR__.'/assets/languages.php');
             <div class="box-1">
               <img src="assets/images/fastsecurity_carousel_01_01.png" alt="#" width="100%" height="100%">
             </div>
-              <div class="text-features">
+              <div class="text-features module" id="vision" data-div="Vision.">
                 <p> Vision </p>
                 <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
                 <p> <?= $languages[$lang]['textS2']; ?> </p>
               </div>
-              <div class="text-features">
+              <div class="text-features module" id="history" data-div="History.">
                 <p> Vision </p>
                 <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
                 <p> <?= $languages[$lang]['textS2']; ?> </p>
               </div>
-              <div class="text-features">
+              <div class="text-features module" id="future" data-div="Future.">
                 <p> Vision </p>
                 <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
                 <p> <?= $languages[$lang]['textS2']; ?> </p>
               </div>
               <div class="flex">
-                <div class="button"> Jag vill bli en del av FS1.0 </div>
+                <div class="button btn-lookbook"> Jag vill bli en del av FS1.0 </div>
                 <a class="lookbook" href="assets/lookbook.pdf" download> Ladda ner en digital version av FS1.0 Lookbook </a>
               </div>
             </div>
@@ -142,23 +153,23 @@ require(__DIR__.'/assets/languages.php');
               </a>
             </div>
           </div>
-            <div class="text-features">
+            <div class="text-features module" id="comfort" data-div="Comfort.">
               <p> Vision </p>
               <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
               <p> <?= $languages[$lang]['textS2']; ?> </p>
             </div>
-            <div class="text-features">
+            <div class="text-features module" id="elegance" data-div="Elegance.">
               <p> Vision </p>
               <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
               <p> <?= $languages[$lang]['textS2']; ?> </p>
             </div>
-            <div class="text-features">
+            <div class="text-features module" id="modernity" data-div="Modernity.">
               <p> Vision </p>
               <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
               <p> <?= $languages[$lang]['textS2']; ?> </p>
             </div>
             <div class="flex">
-              <div class="button"> Jag vill bli en del av FS1.0 </div>
+              <div class="button btn-lookbook"> Jag vill bli en del av FS1.0 </div>
               <a class="lookbook" href="assets/lookbook.pdf" download> Ladda ner en digital version av FS1.0 Lookbook </a>
             </div>
           </div>
@@ -219,13 +230,13 @@ require(__DIR__.'/assets/languages.php');
             </div>
           </div>
 
-              <div class="text-features">
+              <div class="text-features module" id="lookbook" data-div="Lookbook.">
                 <p> Vision </p>
                 <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
                 <p> <?= $languages[$lang]['textS2']; ?> </p>
               </div>
               <div class="flex">
-                <div class="button"> Jag vill bli en del av FS1.0 </div>
+                <div class="button btn-lookbook"> Jag vill bli en del av FS1.0 </div>
                 <a class="lookbook" href="assets/lookbook.pdf" download> Ladda ner en digital version av FS1.0 Lookbook </a>
               </div>
             </div>
@@ -276,7 +287,7 @@ require(__DIR__.'/assets/languages.php');
       <script type="text/javascript" src="assets/script.js"> </script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <script src="http://localhost:35729/livereload.js"> </script>
+      <!-- <script src="http://localhost:35729/livereload.js"> </script> -->
     </main>
   </body>
 </html>
