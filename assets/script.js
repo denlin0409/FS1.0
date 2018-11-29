@@ -45,7 +45,7 @@ for (let i = 0; i < spanDotBtns.length; i++) {
 
 
 
-const BORDER_SIZE = 4;
+const BORDER_SIZE = 6;
 const panel = document.getElementById("right_panel");
 
 let m_pos;
@@ -68,5 +68,7 @@ document.addEventListener("mouseup", function(){
 
 activatorMenu.addEventListener('click', () => {
   sideMenu.classList.toggle('side-menu-open');
+  activatorMenu.classList.toggle('activator-menu__open');
+  activatorMenu.classList.toggle('activator-menu-gone');
   console.log(sideMenu);
 });

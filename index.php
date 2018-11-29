@@ -13,13 +13,13 @@ require(__DIR__.'/assets/languages.php');
     <title> Fast Security 1.0 </title>
     <link href="assets/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   	<!-- <link rel="shortcut icon" type="image/png" href=" link here "> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   	<!-- <link rel="shortcut icon" type="image/png" href=" link here "> -->
   </head>
   <body>
     <main>
       <header> <!-- main header -->
           <img class="logo" src="assets/images/Fill 50.jpg" alt="#">
-            <p class="title"> <?= $languages[$lang]['titleS1']; ?> </p>
+            <p class="title"> <?= $languages[$lang]['titleS1'] ?> <span class="light-menu"> <?= $languages[$lang]['titleSLight']; ?> </span> </p>
           <!-- <a href="?lang=eng"> engelska </a>
           <a href="?lang=swe"> svenska </a> -->
       </header>
@@ -34,7 +34,7 @@ require(__DIR__.'/assets/languages.php');
       </section>
 
       <!-- Start floated sidebar activator -->
-      <div class="activator-menu"> <span class="bold-menu">Be Special. </span>Menu</div>
+      <div class="activator-menu"> <span class="bold-menu">Be Special. </span> <span class="light-menu"> Menu </span> </div>
         <div class="side-menu side-menu-close">
           <div class="languages">
             Svenska | Engelska
@@ -99,9 +99,6 @@ require(__DIR__.'/assets/languages.php');
 
       <section> <!-- section 3 -->
         <div class="second-page-img">
-          <header>
-            <p class="title"> <?= $languages[$lang]['titleF2']; ?> </p>
-          </header>
           <img class="hidden-pic-1" src="assets/images/group 2.jpg" alt="#" width="100%" height="100%">
           <img class="hidden-pic-2" src="assets/images/preview2.jpg" alt="#" width="100%" height="100%">
           <img class="hidden-pic-3" src="assets/images/preview-ms.jpg" alt="#" width="100%" height="100%">
@@ -176,15 +173,41 @@ require(__DIR__.'/assets/languages.php');
         <div class="wrapper">
           <p class="intro-text"> Vision, Historia & Framtid </p>
           <div class="features-container">
-            <div class="box-1">
-              <img src="assets/images/Group 4.jpg" alt="#" width="100%" height="100%">
+            <div class="picture-container">
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="assets/images/Rectangle Copy 2.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/Rectangle Copy 2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/Rectangle Copy 2.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
+          </div>
+
               <div class="text-features">
                 <p> Vision </p>
                 <h3> <?= $languages[$lang]['titleS2']; ?> </h3>
                 <p> <?= $languages[$lang]['textS2']; ?> </p>
               </div>
-
               <div class="flex">
                 <div class="button"> Jag vill bli en del av FS1.0 </div>
                 <p class="lookbook"> Ladda ner en digital version av FS1.0 Lookbook </p>
