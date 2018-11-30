@@ -47,13 +47,19 @@ p {
 .menu-link, .btn-lookbook, .btn-submit{
   cursor: pointer;
 }
-
-.menu-link:hover{
+ .menu-link:hover{
   text-decoration: underline;
 }
+ .btn-lookbook:hover, .btn-submit:hover{
+  box-shadow: 0px 2px 5px gray;
+}
 
-.btn-lookbook:hover, .btn-submit:hover{
-  box-shadow: 0px 5px 5px gray;
+.menu-handle__arrow{
+  height: 12px;
+  width: 12px;
+  background-color: transparent;
+  position: absolute;
+  top: -6px;
 }
 
 .activator-menu{
@@ -69,7 +75,7 @@ p {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 2;
+  z-index: 30;
   animation-name: slide-in;
   animation-duration: 1s;
   transition: transform 1s;
@@ -89,14 +95,6 @@ p {
   transform: rotate(-45deg);
   height: 12px;
   width: 12px;
-}
-
-.menu-handle__arrow{
-  height: 12px;
-  width: 12px;
-  background-color: transparent;
-  position: absolute;
-  top: -6px;
 }
 
 .activator-menu::after{
@@ -125,6 +123,16 @@ p {
  to{transform: translateX(0) rotate(-90deg)}
 }
 
+@keyframes slide-down {
+ from{transform: translateY(-220%)}
+ to{transform: translateY(0)}
+}
+
+@keyframes slide-up {
+ from{transform: translateY(0)}
+ to{transform: translateY(-220%)}
+}
+
 /* Start floated sidebar activator form + menu */
 .side-menu-close{
   transform: translateY(-50%) translateX(100%);
@@ -139,7 +147,7 @@ p {
   position: fixed;
   height: 670px;
   width: 319px;
-  z-index: 1;
+  z-index: 20;
   top: 50%;
   display: flex;
   right: 0;
@@ -147,7 +155,7 @@ p {
   align-items: center;
   transition: transform 1s;
   backface-visibility: hidden;
-  box-shadow: 1px 0px 60px gray;
+  box-shadow: 0px 0px 10px #CCCACB;
 }
 
 .languages{
@@ -207,6 +215,7 @@ ul li {
   text-decoration: underline;
   color: black;
   font-family: "aktiv-grotesk-cd";
+  font-size: 15px;
 }
 
 .info a:hover {
@@ -303,7 +312,7 @@ header {
   left: 50%;
   z-index: 1;
   animation-name: fade-in;
-  animation-duration: 3s;
+  animation-duration: 3.5s;
 }
 
 .first-title {
@@ -312,18 +321,43 @@ header {
   text-align: center;
   font-family: "aktiv-grotesk-cd-bold";
   animation-name: fade-in;
-  animation-duration: 3s;
+  animation-duration: 3.5s;
 }
 
 .first-page-img {
   width: 100%;
   height: auto;
+}
+
+.first-page-img img {
   animation-name: fade-in;
   animation-duration: 3s;
 }
 
 .hidden-pic-2 {
   display: none;
+}
+
+.main-header {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 20;
+  transform: translateY(-220%);
+  transition: 0.6s ease-in-out;
+  border-bottom: 2px solid #00215B;
+}
+
+.header-wh {
+  transform: translateY(0%);
+}
+
+.small-logo {
+  width: 182px;
 }
 
 .second-page-img {
@@ -348,6 +382,7 @@ header {
   color: white !important;
   margin-top: 20px;
   margin-bottom: 20px !important;
+  font-size: 24px;
 }
 
 .wrapper {
@@ -357,7 +392,6 @@ header {
 
 .intro-text {
   text-align: center;
-  margin-right: 564px;
   margin-bottom: 10px !important;
   font-family: "aktiv-grotesk-cd";
   font-size: 20px;
@@ -385,7 +419,7 @@ header {
 .text-features {
   width: auto;
   height: auto;
-  margin: 60px 85px 0;
+  padding: 60px 85px 0;
 }
 
 p:first-child {
@@ -421,7 +455,7 @@ h3 {
   width: auto;
   margin-top: 60px;
   margin-left: 28px;
-  padding: 12px;
+  padding: 10px;
   color: #00215B !important;
   font-size: 24px;
 }
@@ -464,7 +498,6 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
 .carousel-indicators li {
   height: 4px !important;
   width: 46px !important;
-  /* box-shadow: 0px 0px 50px black; */
   margin-right: 5px !important;
   margin-left: 5px !important;
 }
@@ -478,6 +511,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   height: auto;
   width: 100vw;
   position: relative;
+  user-select: none;
 }
 
 .right_panel {
@@ -485,6 +519,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   width: 17%;
   height: 100%;
   right: 0;
+  padding-left: 4px;
   background-image: url('../assets/images/fastsecurity_slider_back.png');
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -512,7 +547,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
 
 .right_panel::before{
   background-color: transparent;
-  z-index: 15;
+  z-index: 6;
   cursor: ew-resize;
 
 }
@@ -530,7 +565,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   height: 48px;
   color: white;
   z-index: 1;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 0px;
   user-select: none;
 }
@@ -541,8 +576,8 @@ footer {
 }
 
 .footer-holder {
-  width: 960px;
-  height: 80%;
+  width: 1000px;
+  height: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -556,7 +591,7 @@ footer {
 .footer-holder p {
   font-size: 24px;
   color: white;
-  padding-bottom: 0px;
+  padding-bottom: 8px;
 }
 
 .footer-align-right {
@@ -570,9 +605,7 @@ footer img {
 
 .languages-footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
+  justify-content: flex-end;
 }
 
 .languages-footer a {
@@ -582,17 +615,28 @@ footer img {
 
 .languages-footer a:hover {
   color: white;
-  font-size: 24px;
 }
 
-.icons {
-  width: 960px;
-  margin: auto;
-  text-align: right;
-  height: 20%;
+.languages-footer p {
+  margin: 0px 8px;
+}
+
+.small-text {
+  font-size: 18px !important;
 }
 
 @media only screen and (max-width: 1250px) {
+  p:first-child {
+    font-size: 18px;
+  }
+
+  p:last-child {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 30px !important;
+  }
 
   .wrapper {
     margin: 70px 74px;
@@ -621,7 +665,7 @@ footer img {
   }
 
   .text-features {
-    margin: 25px;
+    padding: 25px;
   }
 
   .button {
@@ -647,10 +691,32 @@ footer img {
     right: calc(100% - 32px);
   }
 
+  .quotes {
+    height: auto;
+  }
+
   .quotes-center {
     margin-right: 99px;
     margin-left: 99px;
     width: auto;
+  }
+
+  .footer-holder {
+    width: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .footer-holder p {
+    font-size: 18px;
+  }
+
+  .languages-footer a {
+    font-size: 18px;
+  }
+
+  .small-text {
+    font-size: 15px !important;
   }
 }
 
@@ -682,7 +748,7 @@ footer img {
   }
 
   .text-features {
-    margin: 13px 13px 24px 13px;
+    padding: 13px 13px 24px 13px;
   }
 
   .picture-container {
@@ -735,10 +801,6 @@ footer img {
     right: calc(100% - 31px);
   }
 
-  .quotes {
-    height: auto;
-  }
-
   .quotes-center {
     margin-right: 40px;
     margin-left: 40px;
@@ -746,5 +808,27 @@ footer img {
 
   .quotes-center p {
     font-size: 18px;
+  }
+
+  .footer-holder {
+    margin-right: 13px;
+    margin-left: 13px;
+  }
+
+  .footer-holder p {
+    font-size: 16px;
+  }
+
+  .languages-footer a {
+    font-size: 16px;
+  }
+
+  .small-text {
+    font-size: 10px !important;
+  }
+
+  .small-logo {
+    width: 140px;
+    margin-top: 6px;
   }
 }
